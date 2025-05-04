@@ -1,0 +1,59 @@
+[
+  {
+    "id": 3,
+    "nombre": "Ganancia de Masa Muscular",
+    "descripcion": "Plan de entrenamiento de 5 días a la semana diseñado para aumentar masa muscular de forma estructurada y segura, con base científica.",
+    "duracion": "8 semanas",
+    "frecuencia": "5 días por semana",
+    "nivel": "Intermedio",
+    "modalidad": "Gimnasio",
+    "enfoque": "Basado en principios científicos",
+    "incluye": [
+      "Programa estructurado de 8 semanas con progresión de cargas y volumen.",
+      "Ejercicios compuestos y accesorios para trabajar todos los grupos musculares.",
+      "Videos explicativos de cada ejercicio para asegurar una técnica adecuada.",
+      "Guía de RIR (Repeticiones en Reserva) para ajustar la intensidad.",
+      "Enfoque basado en evidencia científica para maximizar resultados de forma segura."
+    ],
+    "fundamentos_cientificos": [
+      "Sobrecarga progresiva",
+      "Frecuencia de entrenamiento",
+      "Volumen de entrenamiento",
+      "Selección de ejercicios",
+      "Incorporar movimientos",
+      "Recuperación adecuada"
+    ],
+    "publico_objetivo": [
+      "Personas con experiencia básica o intermedia en entrenamiento de fuerza.",
+      "Quienes buscan una guía clara y progresiva para ganar masa muscular.",
+      "Individuos que desean entrenar con una metodología basada en evidencia."
+    ],
+    "imagen": "https://picsum.photos/400/250?random=3",
+    "precio": "$15000"
+  },
+  {
+    "id": 4,
+    "nombre": "Pérdida de Grasa Corporal (8 semanas)",
+    "descripcion": "Entrenamiento combinado de fuerza y cardio para reducir grasa corporal de forma sostenible, respaldado por evidencia científica.",
+    "duracion": "8 semanas",
+    "frecuencia": "5 días por semana",
+    "nivel": "Intermedio",
+    "modalidad": "Gimnasio",
+    "enfoque": "Basado en evidencia científica",
+    "incluye": [
+      "Programa estructurado de 8 semanas con progresión de intensidad y volumen.",
+      "Entrenamientos combinados de fuerza y aeróbicos para optimizar la quema de grasa.",
+      "Videos explicativos de cada ejercicio para asegurar una técnica adecuada.",
+      "Guía de RIR (Repeticiones en Reserva) para ajustar la intensidad.",
+      "Enfoque basado en evidencia científica para maximizar resultados de forma segura."
+    ],
+    "fundamentos_cientificos": [],
+    "publico_objetivo": [
+      "Personas con experiencia básica o intermedia en entrenamiento de fuerza.",
+      "Quienes buscan una guía clara y progresiva para reducir su porcentaje de grasa corporal.",
+      "Individuos que desean entrenar con una metodología basada en evidencia y adaptada a sus necesidades."
+    ],
+    "imagen": "https://picsum.photos/400/250?random=4",
+    "precio": "$15000"
+  }
+]
