@@ -1,5 +1,7 @@
 import planesData from '../src/data/planes.json'; 
 import { useParams, useNavigate } from 'react-router-dom'; // Importamos useParams para obtener el ID del plan de la URL
+import { PlanCard } from './PlanCard';
+
 
 export function PlanDetail() {
     const { id } = useParams(); // Obtenemos el ID del plan de la URL
@@ -9,7 +11,6 @@ export function PlanDetail() {
     if (isNaN(id)) {
         return <div>ID no válido</div>;
     }
-
     if (!plan) return <div>Plan not found</div>;
 
 
@@ -17,13 +18,7 @@ export function PlanDetail() {
         <div>
             <button onClick={() => navigate(-1)} className="btn-regresar">Regresar</button>
             <h1>{plan.nombre}</h1>
-            <section>
-                <p>{plan.descripcion}</p>
-                <p>Incluye: {plan.incluye.join(', ')}</p>
-                <p>Fundamentos científicos: {plan.fundamentos_cientificos.join(', ')}</p>
-                <p>Público objetivo: {plan.publico_objetivo.join(', ')}</p>
-                <p>Precio: {plan.precio}</p>
-            </section>
+            <PlanCard plan={plan} /> {/* Agregamos el componente PlanCard para mostrar detalles del plan */}
             <button onClick={() => navigate(`/comprar/${plan.id}`)} className="btn-detalles">Comprar</button>
         </div>
     )

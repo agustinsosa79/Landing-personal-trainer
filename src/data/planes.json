@@ -2,7 +2,7 @@
   {
     "id": 3,
     "nombre": "Ganancia de Masa Muscular",
-    "descripcion": "Plan de entrenamiento de 5 días a la semana diseñado para aumentar masa muscular de forma estructurada y segura, con base científica.",
+    "descripcion": "Plan de entrenamiento de 5 días a la semana diseñado para aumentar masa muscular de forma estructurada y segura.",
     "duracion": "8 semanas",
     "frecuencia": "5 días por semana",
     "nivel": "Intermedio",
@@ -33,8 +33,8 @@
   },
   {
     "id": 4,
-    "nombre": "Pérdida de Grasa Corporal (8 semanas)",
-    "descripcion": "Entrenamiento combinado de fuerza y cardio para reducir grasa corporal de forma sostenible, respaldado por evidencia científica.",
+    "nombre": "Pérdida de Grasa Corporal",
+    "descripcion": "Entrenamiento combinado de fuerza y cardio para reducir grasa corporal de forma sostenible.",
     "duracion": "8 semanas",
     "frecuencia": "5 días por semana",
     "nivel": "Intermedio",

@@ -5,7 +5,7 @@ import "../styles/Navbar.css";
 export function Navbar() {
     return (
         <nav className="navbar">
-            <img className="img-logo" src="./public/images/logo-cotix.png" alt="CotiX Logo" />
+            <img className="img-logo" src="/public/images/logo-cotix.png" alt="CotiX Logo" />
             <ul className="nav-links">
                 <li className="link">
                     <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
