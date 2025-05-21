@@ -1,0 +1,141 @@
+/* Container general */
+.home-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f5f5f5;
+}
+
+.cabecera {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start; 
+  gap: 5rem;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.planes-header {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: start; 
+}
+
+.planes-header h1.planes,
+.planes-header .description,
+.planes-header .sub-description {
+  text-align: start;
+}
+
+.planes-header h1.planes {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.planes-header .description {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+
+.planes-header .sub-description {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 1.5rem;
+}
+
+/* Botón alineado a la izquierda y sin ocupar todo el ancho */
+.btn-detalles {
+  background-color: #0056b3;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  width: max-content;
+  margin-top: 1rem; 
+}
+
+.btn-detalles:hover {
+  background-color: #007afc;
+  color: white;
+}
+
+.image-container {
+  flex: 1 1 350px; /* antes 300px */
+  max-width: 500px; /* antes 400px */
+  text-align: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+.linea {
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin: 3rem 0;
+  background: #0056b3;
+  box-shadow:
+    0 0 6px #0056b3,
+    0 0 12px #0056b3;
+}
+
+.destacado {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.destacado span {
+  color: #0056b3;
+}
+
+.planes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Responsive para cabecera */
+@media (max-width: 768px) {
+  .cabecera {
+    flex-direction: column;
+  }
+
+  .planes-header,
+  .image-container {
+    max-width: 100%;
+    flex: unset;
+  }
+
+  .planes-header h1.planes {
+    font-size: 2rem;
+  }
+
+  .btn-detalles {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  /* Línea divisoria un poco más fina en móvil */
+  .linea {
+    height: 1.5px;
+  }
+}

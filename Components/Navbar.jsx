@@ -1,11 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../styles/Navbar.css";
 
 
 export function Navbar() {
     return (
         <nav className="navbar">
+            <Link to="/">
             <img className="img-logo" src="/public/images/logo-cotix.png" alt="CotiX Logo" />
+            </Link>
             <ul className="nav-links">
                 <li className="link">
                     <NavLink to="/" className={({ isActive }) => (isActive ? "active" : "")}>
@@ -20,11 +22,6 @@ export function Navbar() {
                 <li className="link">
                     <NavLink to="/planes" className={({ isActive }) => (isActive ? "active" : "")}>
                         Planes
-                    </NavLink>
-                </li>
-                <li className="link">
-                    <NavLink to="/faq" className={({ isActive }) => (isActive ? "active" : "")}>
-                        FAQ
                     </NavLink>
                 </li>
                 <li className="Link-contacto">

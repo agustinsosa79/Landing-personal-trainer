@@ -29,7 +29,7 @@
       "Individuos que desean entrenar con una metodología basada en evidencia."
     ],
     "imagen": "https://picsum.photos/400/250?random=3",
-    "precio": "$15000"
+    "precio": "$15000 ARS"
   },
   {
     "id": 4,
@@ -54,6 +54,6 @@
       "Individuos que desean entrenar con una metodología basada en evidencia y adaptada a sus necesidades."
     ],
     "imagen": "https://picsum.photos/400/250?random=4",
-    "precio": "$15000"
+    "precio": "$15000 ARS"
   }
 ]

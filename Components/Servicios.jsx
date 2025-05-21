@@ -28,6 +28,7 @@ import '../styles/Servicios.css'; // Asegúrate de tener este archivo CSS para e
             },
         ];
 
+
         servicios.map((servicio) => {
             if (servicio[1]) 
                 return servicio.style = { border: '1px solid #fff' };

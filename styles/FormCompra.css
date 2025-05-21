@@ -1,0 +1,67 @@
+    .form-compra-container {
+    background: linear-gradient(145deg, #10141a, #0c0f14);
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #e0f7ff;
+    max-width: 500px;
+    margin: 2rem auto;
+    box-shadow: 0 0 20px rgba(0, 216, 255, 0.2);
+    border: 1px solid #00bcd4;
+    }
+
+    .form-compra-container h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+    }
+
+    .form-compra-container p {
+    color: #aadfff;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    }
+
+    .form-compra-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    }
+
+    .form-compra-container label {
+    font-weight: 600;
+    color: #a7e4ff;
+    display: block;
+    margin-bottom: 0.5rem;
+    }
+
+    .form-compra-container input {
+    background-color: #0b0f15;
+    color: #e0f7ff;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s ease;
+    }
+
+    .form-compra-container input:focus {
+    background-color: #101821;
+    }
+
+    .form-compra-container button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    }
+
+    .form-compra-container button:hover {
+    color: white;
+    }
