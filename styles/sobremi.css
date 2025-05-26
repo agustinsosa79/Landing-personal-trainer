@@ -70,11 +70,12 @@
   cursor: default;
 }
 
-/* Responsive */
+/* Responsive para tablets en adelante */
 @media (min-width: 768px) {
   .sobremi__container {
     flex-direction: row;
     align-items: flex-start;
+    gap: 4rem;
   }
 
   .sobremi__img img {
@@ -83,6 +84,53 @@
 
   .sobremi__info {
     text-align: left;
+  }
+}
+
+/* Ajustes para pantallas medianas y pequeñas */
+@media (max-width: 767px) {
+  .sobremi {
+    padding: 6rem 1.5rem;
+  }
+
+  .sobremi__img img {
+    width: 200px;
+  }
+
+  .sobremi__title {
+    font-size: 2rem;
+  }
+
+  .sobremi__text p {
+    font-size: 1rem;
+  }
+}
+
+/* Ajustes para móviles pequeños */
+@media (max-width: 480px) {
+  .sobremi {
+    padding: 4rem 1rem;
+  }
+
+  .sobremi__img img {
+    width: 150px;
+  }
+
+  .sobremi__title {
+    font-size: 1.6rem;
+  }
+
+  .sobremi__text p {
+    font-size: 0.9rem;
+  }
+
+  .sobremi__extra {
+    gap: 0.5rem;
+  }
+
+  .sobremi__extra span {
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
   }
 }
 

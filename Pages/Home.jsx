@@ -30,9 +30,7 @@ export function Home() {
       </section>
 
       <hr className="linea" />
-
       <Servicios />
-
       <hr className="linea" />
 
       <section className="planes-container">

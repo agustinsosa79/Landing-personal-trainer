@@ -1,78 +1,143 @@
+/* === Estilos base === */
 .navbar {
-    display: flex;
-    align-items: center;
-    padding-left: 5rem;
-    width: 100%;
-    color: #fff;    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 1rem 2rem;
+  position: relative;
+  z-index: 1000;
 }
 
 .img-logo {
-    margin: 0;
-    padding: 0;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    display: flex;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  z-index: -1;
 }
 
-.navbar h1 {
-    font-size: 2rem;
-    margin: 0;
-    color: #fff; 
-    margin-right: 20px;
+.menu-toggle {
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none; /* Se muestra solo en mobile */
+  z-index: 1500; /* Asegura que el botón esté por encima de otros elementos */
 }
 
 .nav-links {
-    display: flex;
-    gap: 90px;
-    list-style: none;
-    align-items: center;
-    margin-left: 40rem;
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
 }
 
-.link a {
-    display: inline-block;
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 12px;
-    font-size: 14px;
-    font-weight: 600;
-    position: relative;
-  }
-  
-  .link a::after {
-    content: '';
+.link a,
+.Link-contacto a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  padding: 0.5rem;
+  font-size: 14px;
+}
+.link a::after {
+    content: "";
+    display: block;
     position: absolute;
     left: 0;
-    bottom: 4px;
+    bottom: 0;
     width: 100%;
     height: 2px;
-    background: #0056b3;
-    box-shadow: none;
-    transition: box-shadow 0.3s ease, background 0.3s ease;
+    background: linear-gradient(90deg, #00f0ff, #007bff, #00f0ff);
+    border-radius: 0;
+    box-shadow: 0 0 8px #00f0ff, 0 0 16px #007bff;
+    transform: scaleX(1);
+    transition: transform 0.3s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s, opacity 0.3s;
+    pointer-events: none;
     opacity: 0;
+}
+
+.link a:hover::after {
+    transform: scaleX(1);
+    box-shadow: 0 0 16px #00f0ff, 0 0 32px #007bff;
+    opacity: 0.9;
+}
+
+@media (min-width: 769px) {
+  .link a:hover::after,
+  .link a.active::after {
+    transform: scaleX(1);
   }
-  
-  .link a:hover::after {
-    opacity: 1;
-    box-shadow: 0 0 8px #0056b3, 0 0 12px #0056b3 , 0 0 16px #0056b3;
-    background: #0056b3;
-  }
-  
+}
 
 .Link-contacto a {
-    background: linear-gradient(to bottom, #007bff, #0056b3);
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 91, 187, 0.4);
-    display: inline-block;
+  background: linear-gradient(to bottom, #007bff, #0056b3);
+  border-radius: 50px;
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 91, 187, 0.4);
+  transition: transform 0.2s ease;
 }
 
 .Link-contacto a:hover {
-    background: linear-gradient(to bottom, #0056b3, #007bff);
-    box-shadow: 0 6px 12px rgba(0, 91, 187, 0.6);
-    transform: translateY(-2px); 
+  transform: translateY(-2px);
+}
+
+/* === MOBILE === */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    margin-top: 28px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 2000; /* Asegura que el botón esté visible y encima */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    width: 220px;
+    height: 100vh;
+    background-color: #000;
+    padding: 3rem 2rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000; /* Asegura que el menú esté encima de otros elementos */
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .link {
+    margin-bottom: 1.5rem;
+  }
+
+  .link a::after {
+    display: none;
+  }
+}
+
+/* Overlay */
+.menu-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 150; /* Asegura que el overlay esté detrás del menú */
+}
+
+.menu-overlay.open {
+  display: block;
+  backdrop-filter: blur(1px); /* Efecto de desenfoque */
 }

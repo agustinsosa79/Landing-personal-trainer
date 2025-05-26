@@ -1,93 +1,94 @@
-    .footer {
+.footer {
     background: linear-gradient(180deg, #000, #091826);
     color: #bbecff;
     padding: 3rem 1.5rem 2rem;
     font-family: 'Segoe UI', sans-serif;
     margin-top: 70px;
-    }
+}
 
-    .footer__container {
+.footer__container {
     max-width: 1200px;  
     margin: 0 auto;
-    }
+}
 
-    .footer__quote {
+.footer__quote {
     text-align: center;
     font-size: 1.2rem;
     font-style: italic;
     color: #fff;
     margin-bottom: 2rem;
     animation: fadeIn 1.5s ease;
-    }
+}
 
-    .footer__content {
+.footer__content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
-    }
+}
 
-    .footer__section {
+.footer__section {
     flex: 1 1 200px;
-    }
+}
 
-    .footer__section h3 {
+.footer__section h3 {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     color: #fff;
-    }
+}
 
-    .footer__section ul {
+.footer__section ul {
     list-style: none;
     padding: 0;
-    }
+}
 
-    .footer__section li {
+.footer__section li {
     margin-bottom: 0.5rem;
-    }
+}
 
-    .footer__section a {
+.footer__section a {
     color: #bbecff;
     text-decoration: none;
     transition: color 0.3s;
-    }
+}
 
-    .footer__section a:hover {
+.footer__section a:hover {
     color: #ffffff;
-    }
+}
 
-    .footer__icons {
+.footer__icons {
     display: flex;
     gap: 1.2rem;
     font-size: 1.8rem;
-    }
+}
 
-    .footer__icons a {
+.footer__icons a {
     color: #0056b3;
     transition: transform 0.3s ease, color 0.3s ease;
-    }
+}
 
-    .footer__icons a:hover {
+.footer__icons a:hover {
     color: #fff;
     transform: scale(1.2);
-    }
+}
 
-    .footer__section form {
+.footer__section form {
     display: flex;
     gap: 0.5rem;
     margin-top: 0.5rem;
-    }
+}
 
-    .footer__section input[type="email"] {
+.footer__section input[type="email"] {
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
     flex-grow: 1;
     background-color: #112b3c;
     color: #fff;
-    }
+    min-width: 0; /* importante para flexbox */
+}
 
-    .footer__section button {
+.footer__section button {
     padding: 0.5rem 1rem;
     background-color: #0056b3;
     color: #fff;
@@ -95,25 +96,26 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
-    }
+}
 
-    .footer__section button:hover {
+.footer__section button:hover {
     background-color: #0269d6;
-    }
+}
 
-    .footer__bottom {
+.footer__bottom {
     text-align: center;
     margin-top: 3rem;
     font-size: 0.9rem;
     color: #8ad8ff;
-    }
+}
 
-    .footer__bottom a {
+.footer__bottom a {
     color: #8ad8ff;
     text-decoration: underline;
-    }
+}
 
-    @media (max-width: 768px) {
+/* Media queries ya presentes */
+@media (max-width: 768px) {
     .footer__content {
         flex-direction: column;
         align-items: center;
@@ -121,15 +123,58 @@
 
     .footer__section {
         text-align: center;
+        width: 100%;
+        max-width: 400px;
     }
 
     .footer__section form {
         flex-direction: column;
-    }
+        align-items: stretch;
     }
 
-    /* Animación suave */
-    @keyframes fadeIn {
+    .footer__section input[type="email"] {
+        width: 100%;
+    }
+
+    .footer__section button {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .footer {
+        padding: 2rem 1rem 1.5rem;
+    }
+
+    .footer__quote {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .footer__section h3 {
+        font-size: 1rem;
+    }
+
+    .footer__section ul li {
+        font-size: 0.9rem;
+    }
+
+    .footer__icons {
+        font-size: 1.5rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .footer__bottom {
+        font-size: 0.8rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Animación suave */
+@keyframes fadeIn {
     0% { opacity: 0; transform: translateY(20px); }
     100% { opacity: 1; transform: translateY(0); }
-    }
+}
