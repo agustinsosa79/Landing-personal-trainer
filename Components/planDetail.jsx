@@ -29,9 +29,14 @@ export function PlanDetail() {
                         <span>📚 {plan.enfoque}</span>
                     </div>
                     <p className="plan-precio">{plan.precio}</p>
-                    <button onClick={() => navigate(`/comprar/${plan.id}`)} className="btn-comprar">
-                        ¡Comprar ahora!
-                    </button>
+    <a
+    href="https://mpago.li/1PA34CU"
+    className="btn-comprar"
+    target="_blank"
+    rel="noopener noreferrer"
+>
+    Comprar Plan
+</a>
                 </div>
             </div>
 

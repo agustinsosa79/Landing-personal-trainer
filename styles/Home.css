@@ -20,7 +20,7 @@
 .planes-header {
   flex: 1 1 400px;
   max-width: 600px;
-  text-align: left;
+  text-align: start;
 }
 
 .planes-header h1.planes {
@@ -58,10 +58,10 @@
   text-decoration: none;
   transition: background-color 0.3s ease;
   cursor: pointer;
-  display: inline-block;
+  display: flex;
   width: max-content;
   margin-top: 1rem;
-  text-align: center;
+  text-align: start;
   box-shadow: 0 4px 10px rgba(0,86,179,0.5);
 }
 
@@ -73,7 +73,7 @@
 .image-container {
   flex: 1 1 350px;
   max-width: 500px;
-  text-align: center;
+  text-align: start;
 }
 
 .image-container img {
